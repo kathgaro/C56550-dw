@@ -1,71 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Git - Github</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">Header
-            <header id="arriba">
-                <h1>Mi primer página web</h1>
-            </header>
-        </div>
-        <div class="sidebar">Sidebar
-            <nav class="navbar">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/quienes_somos.html">Quienes Somos</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/galeria.html">Galeria</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>            
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
                 </ul>
-            </nav>
-        
-        </div>
-        <div class="content">Content
-                <section id="banner">
-                    <h2>HOY TUVE ENTREGA EN EL LABURO TMB!</h2>
-                    <p> La verdad, es que no les pienso mentir, este TP me agarró desprevenida</p>
-                </section>
-                <section>
-                    <h2>JEJE! vengo durmiendo poco</h2>
-                </section>
-                <section class="flex-container">
-                    <div>
-                        <h3>A pesar de que se me rompió la compu</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos molestias repellat dolore deleniti reprehenderit tempora sunt cupiditate delectus harum, debitis perferendis modi beatae aperiam quod voluptate id doloribus tempore. Eaque.</p>
-                    </div>
-                    <div>
-                        <h3>Y perdí todos los avances en VSC</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem dolore, suscipit corrupti iure beatae reprehenderit quaerat ab nulla enim earum praesentium, amet debitis quo accusantium, ex repudiandae saepe facilis.</p>
-                    </div>
-                    <div>
-                        <h3>LOGRÉ HACER QUE FUNCIONE!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur deleniti delectus commodi debitis ut, earum autem ex iusto asperiores. Error quidem est totam vel, tempora nostrum tenetur. Nisi, pariatur!</p>
-                    </div>
-                </section>
-        </div>
-        <div class="footer">Footer
-            <footer>
-                <div class="footer-container">
-                    <p class="footerindex">Made by Sofia Camussi</p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/sofiacamussi"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="mailto:camussisofia@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
-                        <a href="tel:+5493416403204"><ion-icon name="call-outline"></ion-icon></a>
-                        <a href="https://w.app/sazQ1h"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                        <a href="https://www.youtube.com/watch?v=H-yXOlzZ-eo"><ion-icon name="logo-youtube"></ion-icon></a>
-                        <a href="https://www.linkedin.com/in/sofia-camussi/"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    </div>
-                    <a href="#">Ir para arriba</a>
-                </div>
-            </footer>
-        </div>
-    </div>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <p>Clase git - Kathgaro</p>
+    </footer>
+
+    <!--BS scrips-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
-
-
