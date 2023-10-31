@@ -1,0 +1,61 @@
+<html>
+<head>
+  <style>
+    select option:hover {
+      background-color: #a52424;
+    }
+
+    .custom-select {
+  position: relative;
+  width: 200px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selected-option {
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.options li {
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.options li:hover {
+  background-color: #f0f0f0; /* Cambiar el color al pasar el mouse */
+}
+
+.custom-select:hover .options {
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+  <select>
+    <option value="opcion1">opciones</option>
+    <option value="opcion2">Opción 2</option>
+    <option value="opcion3">Opción 3</option>
+  </select>
+
+  <div class="custom-select">
+    <span class="selected-option">Seleccionar una opción</span>
+    <ul class="options">
+      <li>Opción 1</li>
+      <li>Opción 2</li>
+      <li>Opción 3</li>
+    </ul>
+  </div>
+  
+</body>
+</html>
