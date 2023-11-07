@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -9,21 +10,25 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 0.6fr auto;
-  grid-template-areas: "cabeza cabeza  cabeza" "publi  galeria galeria" "publi  galeria galeria" "pie     pie     pie";
+  grid-template-areas: 
+  "cabeza cabeza  cabeza" 
+  "publi  galeria galeria" 
+  "publi  galeria galeria" 
+  "pie     pie     pie";
 }
 
 .cabeza {
   grid-area: cabeza;
 }
+
 .cabeza__span {
   font-size: 0.7rem;
   background-color: #000000;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  width: 80%;
+  width: 100%;
   padding: 0.6em;
-  font-family: "Arima", cursive;
 }
 .cabeza__span p {
   color: #ffffff;
@@ -47,12 +52,10 @@
 
 .publi {
   grid-area: publi;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-around;
   margin: 10px;
 }
-
 .publi__button {
   background-color: #000;
   color: #ffffff;
@@ -60,11 +63,9 @@
   border-radius: 10px;
   width: 80%;
 }
-
 .publi__img {
   width: 100%;
 }
-
 .publi__card {
   background: #e8dbcb;
   height: 29%;
@@ -73,6 +74,56 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.galeria {
+  grid-area: galeria;
+  display: flex;
+    flex-flow: wrap;
+    margin: 1.5em;
+    justify-content: center;
+}
+.galeria__producto {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7em;
+    border: 1px solid #000000;
+    border-radius: 0 0 16px 60px;
+    width: 14em;
+    height: 17em;
+}
+.galeria__producto:hover {
+  box-shadow: 5px 8px 8px 2px rgba(0, 0, 0, 0.1);
+}
+.galeria__producto__span {
+  width: 40px;
+  height: 25px;
+  background: #e8dbcb;
+  text-align: center;
+  position: relative;
+  left: 73px;
+  border-radius: 0px 0px 10px 10px;
+}
+.galeria__producto__img {
+  width: 10rem;
+}
+
+.galeria__producto__button {
+  background-color: #e8dbcb;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.pie {
+  grid-area: pie;
+  background-color: #000;
+  height: 5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* T A B L E T */
@@ -93,6 +144,10 @@
     height: 100%;
     border-radius: 0 10px 10px 0px;
   }
+  .galeria__producto {
+    width: 20rem;
+    height: 17rem;
+  }
   .galeria__producto__img {
     width: 13rem;
   }
@@ -100,8 +155,6 @@
     display: none;
   }
   .galeria__producto__button {
-    width: 2rem;
-    height: 10rem;
     width: 2rem;
     height: 10rem;
     background-color: #e8dbcb;
@@ -147,4 +200,3 @@
   }
 }
 
-/*# sourceMappingURL=main.css.map */

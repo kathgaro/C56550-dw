@@ -1,0 +1,24 @@
+.publi {
+    grid-area: publi;
+   //@include flex-just-direction;
+
+   @include flex-param(row, space-evenly);
+    margin: 10px;
+  }
+  .publi__button {
+    background-color: #000;
+    color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 80%;
+  }
+  .publi__img {
+    width: 100%;
+  }
+  .publi__card {
+    background: #e8dbcb;
+    height: 29%;
+    border-radius: 10px;
+    padding: 20px;
+    @include flex-just-direction;
+  }

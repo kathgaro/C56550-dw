@@ -1,0 +1,11 @@
+/* GRID TEMPLATE */
+.grid__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.6fr auto;
+    grid-template-areas: 
+    "cabeza cabeza  cabeza" 
+    "publi  galeria galeria" 
+    "publi  galeria galeria" 
+    "pie     pie     pie";
+  }

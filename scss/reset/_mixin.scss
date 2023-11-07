@@ -1,0 +1,17 @@
+@mixin flex-just-direction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+// Mixin con parametos
+@mixin w-h ($w, $h){
+    width: $w;
+    height: $h;
+}
+
+@mixin flex-param ($f-d, $j-c){
+    display: flex;
+    flex-direction: $f-d;
+    justify-content: $j-c;
+}
