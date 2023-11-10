@@ -1,3 +1,6 @@
+// mixin 👉 Declarando
+// @include 👉 Invocando al mixin que quiero 
+
 @mixin flex-just-direction{
     display: flex;
     flex-direction: column;
@@ -15,3 +18,4 @@
     flex-direction: $f-d;
     justify-content: $j-c;
 }
+

@@ -1,0 +1,26 @@
+/* VARIABLES 
+
+La paleta de color - Color primario - secundario - etc
+Tamaño de tipografia
+Familia tipografia
+Tamaños
+Imagenes - background
+
+*/
+
+//Negro
+$color-primary:#000000; 
+// Blanco - Se usa para fondos con texto negro
+$color-white: #ffffff;
+$color-secondary:  #e8dbcb;
+$borde-1: 1px solid #000;
+$tipografia-titulo: "Arima", cursive;
+$width-total: 80%;
+
+//Box-shadow
+$bshadow-1: 5px 8px 8px 2px $color-primary;
+
+//Border-radius
+$b-radio-10: 0px 0px 10px 10px;
+// Fondos de imagen
+$fondo-home: url('../img/banner-h1.jpg');

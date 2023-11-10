@@ -4,10 +4,13 @@
 @import './reset/vars';
 @import './reset/grid';
 
-//Layout
-@import './header';
-@import './publi';
+//Componentes
+@import './components/button';
 
+//Layout
+@import './layout/header';
+@import './layout/publi';
+@import './layout/galeria';
 //mq
 @import './reset/mq';
 
