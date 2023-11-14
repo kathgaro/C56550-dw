@@ -17,64 +17,7 @@
   "pie     pie     pie";
 }
 
-.cabeza {
-  grid-area: cabeza;
-}
 
-.cabeza__span {
-  font-size: 0.7rem;
-  background-color: #000000;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  width: 100%;
-  padding: 0.6em;
-}
-.cabeza__span p {
-  color: #ffffff;
-  margin: 0;
-  font-size: 0.8em;
-  letter-spacing: 4px;
-}
-
-.notificacion__button {
-  border: none;
-}
-.notificacion__button--svg {
-  margin: 7px;
-  width: 20px;
-  height: 20px;
-}
-.notificacion__button a {
-  padding: 0px;
-  margin-right: 10px;
-}
-
-.publi {
-  grid-area: publi;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 10px;
-}
-.publi__button {
-  background-color: #000;
-  color: #ffffff;
-  border: 1px solid #000;
-  border-radius: 10px;
-  width: 80%;
-}
-.publi__img {
-  width: 100%;
-}
-.publi__card {
-  background: #e8dbcb;
-  height: 29%;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
 
 .galeria {
   grid-area: galeria;
@@ -116,15 +59,7 @@
   border: 1px solid #000000;
 }
 
-.pie {
-  grid-area: pie;
-  background-color: #000;
-  height: 5rem;
-  color: #ffffff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+
 
 /* T A B L E T */
 @media (max-width: 768px) {

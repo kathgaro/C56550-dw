@@ -16,11 +16,88 @@ $color-secondary:  #e8dbcb;
 $borde-1: 1px solid #000;
 $tipografia-titulo: "Arima", cursive;
 $width-total: 80%;
-
-//Box-shadow
-$bshadow-1: 5px 8px 8px 2px $color-primary;
-
 //Border-radius
 $b-radio-10: 0px 0px 10px 10px;
+
 // Fondos de imagen
 $fondo-home: url('../img/banner-h1.jpg');
+
+
+
+
+
+
+
+
+
+//🌟 @if - Condicional - Ejemplo: Box-shadow
+//negro
+
+$bshadow-1: 5px 8px 8px 2px $color-primary;
+//beige
+$bshadow-2: 5px 8px 8px 2px $color-secondary;
+//red
+$bshadow-3: 5px 8px 8px 2px #ff0000;
+
+// ✅Galeria
+
+//Condicion 👉 Para que funcione siempre tiene que ser true
+@mixin box-shadw($bxshadow) {
+    //si...
+    @if $bxshadow == "s-right"{
+       box-shadow: $bshadow-1;
+        //sino...
+    }@else if $bxshadow == "s-left"{
+        box-shadow: $bshadow-2;
+        //sino
+    }@else if $bxshadow == "s-top"{
+        box-shadow: $bshadow-3;
+        //bueno si no hay otra cosa
+    }@else{
+        box-shadow: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+// 🌟 Mapas - Bucle @each
+
+$fontsize-mood:(
+  //   mood      size
+    uno: 1rem,
+    dos: 0.7rem,
+    tres:0.5rem,
+    cuatro: 0.2rem
+);
+@each $mood, $size in $fontsize-mood{
+    .size-#{$mood}{
+        font-size: $size;
+    }
+}
+
+
+// Declarando el mapa
+$redes:(
+//    coso      color
+    spotify: #008000, 
+    linkedin: #0000ff,
+    instagram: #d92342,
+    whatsapp: #5adb5a,
+);
+//        ☝      ☝
+@each $coso, $color in $redes{
+    .redes__#{$coso}{
+        background-color: $color;
+    }
+}
+
+
+
+
+// 🌟Mapas - map-get($mapa, llave) - Ejemplo en Header

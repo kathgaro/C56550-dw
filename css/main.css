@@ -14,6 +14,38 @@ Tamaños
 Imagenes - background
 
 */
+.size-uno {
+  font-size: 1rem;
+}
+
+.size-dos {
+  font-size: 0.7rem;
+}
+
+.size-tres {
+  font-size: 0.5rem;
+}
+
+.size-cuatro {
+  font-size: 0.2rem;
+}
+
+.redes__spotify {
+  background-color: #008000;
+}
+
+.redes__linkedin {
+  background-color: #0000ff;
+}
+
+.redes__instagram {
+  background-color: #d92342;
+}
+
+.redes__whatsapp {
+  background-color: #5adb5a;
+}
+
 /* GRID TEMPLATE */
 .grid__container {
   display: grid;
@@ -32,7 +64,7 @@ Tipos de botones - activos - inactivos - hover
   grid-area: cabeza;
 }
 .cabeza__span {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   background-color: #000000;
   text-align: center;
   text-transform: uppercase;
@@ -108,7 +140,7 @@ Tipos de botones - activos - inactivos - hover
   height: 17em;
 }
 .galeria__producto:hover {
-  box-shadow: 5px 8px 8px 2px #000000;
+  box-shadow: 5px 8px 8px 2px #e8dbcb;
 }
 .galeria__producto__span {
   width: 40px;
@@ -126,6 +158,20 @@ Tipos de botones - activos - inactivos - hover
   background-color: #e8dbcb;
   color: #ffffff;
   border: 1px solid #000000;
+}
+
+.pie {
+  grid-area: pie;
+  background-color: #000;
+  height: 5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pie__redes__size {
+  width: 25px;
+  height: 25px;
 }
 
 /* T A B L E T */

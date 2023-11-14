@@ -1,8 +1,9 @@
 .cabeza{
     grid-area: cabeza;
+    
 
     &__span {
-        font-size: 0.7rem;
+        font-size: map-get($fontsize-mood, tres);
         background-color: $color-primary;
         text-align: center;
         text-transform: uppercase;

@@ -1,0 +1,14 @@
+.pie {
+    grid-area: pie;
+    background-color: #000;
+    height: 5rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__redes{
+        &__size{
+            @include w-h(25px, 25px);
+        }
+    }
+  }
