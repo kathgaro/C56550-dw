@@ -1,17 +1,20 @@
 // Reset
 @import './reset/reset';
-@import './reset/mixin';
 @import './reset/vars';
+@import './reset/mixin';
 @import './reset/grid';
+@import './components/bag-imge';
 
-//Componentes
+//Componentes - No es obligatorio
 @import './components/button';
 
-//Layout
+//Layout -
 @import './layout/header';
 @import './layout/publi';
 @import './layout/galeria';
 @import './layout/footer';
+
 //mq
 @import './reset/mq';
+
 

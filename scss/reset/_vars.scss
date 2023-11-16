@@ -15,7 +15,7 @@ $color-white: #ffffff;
 $color-secondary:  #e8dbcb;
 $borde-1: 1px solid #000;
 $tipografia-titulo: "Arima", cursive;
-$width-total: 80%;
+$width-total: 100%;
 //Border-radius
 $b-radio-10: 0px 0px 10px 10px;
 
@@ -93,7 +93,13 @@ $redes:(
 //        ☝      ☝
 @each $coso, $color in $redes{
     .redes__#{$coso}{
-        background-color: $color;
+       margin-right: 0.5em;
+       transition-duration: 2s;
+       transition-delay: 1s;
+        &:hover{
+            color: $color;
+            transform: scale(1.5);
+        }
     }
 }
 

@@ -1,8 +1,6 @@
 .publi {
     grid-area: publi;
    //@include flex-just-direction;
-
-   @include flex-param(row, space-evenly);
     margin: 10px;
  
     &__button {

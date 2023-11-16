@@ -31,19 +31,43 @@ Imagenes - background
 }
 
 .redes__spotify {
-  background-color: #008000;
+  margin-right: 0.5em;
+  transition-duration: 2s;
+  transition-delay: 1s;
+}
+.redes__spotify:hover {
+  color: #008000;
+  transform: scale(1.5);
 }
 
 .redes__linkedin {
-  background-color: #0000ff;
+  margin-right: 0.5em;
+  transition-duration: 2s;
+  transition-delay: 1s;
+}
+.redes__linkedin:hover {
+  color: #0000ff;
+  transform: scale(1.5);
 }
 
 .redes__instagram {
-  background-color: #d92342;
+  margin-right: 0.5em;
+  transition-duration: 2s;
+  transition-delay: 1s;
+}
+.redes__instagram:hover {
+  color: #d92342;
+  transform: scale(1.5);
 }
 
 .redes__whatsapp {
-  background-color: #5adb5a;
+  margin-right: 0.5em;
+  transition-duration: 2s;
+  transition-delay: 1s;
+}
+.redes__whatsapp:hover {
+  color: #5adb5a;
+  transform: scale(1.5);
 }
 
 /* GRID TEMPLATE */
@@ -52,6 +76,10 @@ Imagenes - background
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 0.6fr auto;
   grid-template-areas: "cabeza cabeza  cabeza" "publi  galeria galeria" "publi  galeria galeria" "pie     pie     pie";
+}
+
+.bg-img__galeria {
+  background-image: url("../img/banner-h1.jpg");
 }
 
 /*
@@ -69,7 +97,7 @@ Tipos de botones - activos - inactivos - hover
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  width: 80%;
+  width: 100%;
   padding: 0.6em;
   font-family: "Arima", cursive;
 }
@@ -95,9 +123,6 @@ Tipos de botones - activos - inactivos - hover
 
 .publi {
   grid-area: publi;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   margin: 10px;
 }
 .publi__button {
@@ -158,6 +183,9 @@ Tipos de botones - activos - inactivos - hover
   background-color: #e8dbcb;
   color: #ffffff;
   border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 36px;
 }
 
 .pie {
